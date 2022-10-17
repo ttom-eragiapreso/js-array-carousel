@@ -48,3 +48,11 @@ img {
 .arrow-down {
   bottom: 10px;
 }
+
+.item{
+  display: none;
+}
+
+.active {
+  display: block;
+}
