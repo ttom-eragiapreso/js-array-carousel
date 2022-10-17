@@ -5,7 +5,7 @@ console.log("Slider app Loaded")
 const arrowUp = document.querySelector(".arrow-up");
 const arrowDown = document.querySelector(".arrow-down");
 const photoContainer = document.querySelector(".photo-container");
-const aside = document.querySelector(".aside");
+const aside = document.querySelector(".aside-photo-container");
 const imagesArray = [`01.jpg`, `02.jpg`, `03.jpg`, `04.jpg`, `05.jpg`];
 let imagesTags = ``;
 let imagesCounter = 0;
@@ -19,6 +19,14 @@ for(let i = 0; i < imagesArray.length; i++){
 
 // Stampo la serie di img dentro al foto container
 photoContainer.innerHTML = imagesTags;
+aside.innerHTML += imagesTags;
+
+const allAsideImages = document.querySelectorAll(".aside .item");
+
+for(let i = 0; i < allAsideImages.length; i++){
+  allAsideImages[i].classList.remove("item");
+  allAsideImages[i].classList.add("active");
+}
 
 // Mi prendo la HTML collection di tutti gli elementi con la classe item che nasconde le foto 
 const allImages = document.getElementsByClassName("item");
