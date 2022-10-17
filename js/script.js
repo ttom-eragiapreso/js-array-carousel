@@ -12,6 +12,13 @@ let imagesCounter = 0;
 
 
 
+
+
+
+
+
+
+
 // Itero l'array che contiene le desinenze delle immagini e scrivo un tag IMG con la desinenza consecutiva 
 for(let i = 0; i < imagesArray.length; i++){
   imagesTags += `<img src="./consegna/img/${imagesArray[i]}" alt="" class="item">`;
@@ -36,7 +43,16 @@ const allImages = document.getElementsByClassName("item");
 allImages[0].classList.add("active");
 allAsideImages[0].classList.add("active");
 
-// Quando clicco la freccia in su
+
+
+
+
+
+
+
+
+
+// Quando clicco la freccia in giù
 arrowDown.addEventListener("click", function(){
 
   // Prima rimuovo la classe active alla foto attualmente mostrata
@@ -58,7 +74,20 @@ arrowDown.addEventListener("click", function(){
 });
 
 
-// Quando clicco la freccia in giù
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Quando clicco la freccia in sù
 arrowUp.addEventListener("click", function(){
 
   // Anche qui nascondo prima la foto attualmente mostrata
