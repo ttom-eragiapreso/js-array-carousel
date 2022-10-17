@@ -1,0 +1,18 @@
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  border: 1px solid black;
+  width: 60%;
+  height: 60%;
+}
+
+.aside {
+  height: 60%;
+  width: 250px;
+  border: 1px solid red;
+}
